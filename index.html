@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--title-->
+        <title>Geek Motors</title>
+
+    	<!-- meta charec set -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous" />
+
+        <!-- Wow Plugin -->
+        <link rel="stylesheet" href="css/animate.css" />
+
+        <!--CSS My Own File-->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="loading-back">
+            <div id="loading">
+                <img src="images/preLoader.gif" class="loadingLogo"/>
+            </div>
+        </div>
+        <header>
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid navnav">
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
+                    </div>
+
+                    <!-- Search And Signin -->
+                    <!--
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+                    </form>
+                    -->
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#" id="nav-color-font1">Home<span class="sr-only">(current)</span></a></li>
+                            <li><a href="#d1" id="nav-color-font2">Services</a></li>
+                            <li><a href="#d2" id="nav-color-font3">Gallery</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" 
+                                aria-expanded="false" id="nav-color-font4">Brand<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Hyundai</a></li>
+                                    <li><a href="#">Daewoo</a></li>
+                                    <li><a href="#">BMW</a></li>
+                                    <li><a href="#">Subaru</a></li>
+                                    <li><a href="#">Kia</a></li>
+                                    <li><a href="#">Chevrolet</a></li>
+                                    <li><a href="#">Peugeot</a></li>
+                                    <li><a href="#">Kia</a></li>
+                                    <li><a href="#">Seat</a></li>
+                                    <li><a href="#">Suzuki</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#d3" id="nav-color-font5">Contact us</a></li>
+                        </ul>
+                    </div><!--navbar-collapse -->
+                </div><!--container-fluid -->
+            </nav>
+        </header>
+        <!-- End Navbar -->
+
+        <main>
+            <!-- Slider -->
+            <section>
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/banner1.jpg" alt="BMW" width="100%" height="100%"/>
+                            <div class="carousel-caption">
+                                <h3 class="wow bounceInDown pa-up">Mercedes</h3>
+                                <p class="wow bounceInUp pa-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/banner2.jpg" alt="BMW" width="100%" height="50%"/>
+                            <div class="carousel-caption">
+                                <h3 class="wow bounceInDown pa-up">Mazda</h3>
+                                <p class="wow bounceInUp pa-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/banner3.jpg" alt="BMW" width="100%" height="50%"/>
+                            <div class="carousel-caption">
+                                <h3 class="wow bounceInDown pa-up">Ferrari</h3>
+                                <p class="wow bounceInUp pa-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+            <!-- End Slider -->
+            
+            <!-- Start Services -->
+            <section>
+                <div class="services-div" id="d1">
+                    <div class="text-center services">
+                        <h2 class="wow slideInUp data-wow-duration="1s"">Our Services</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                            <h3 class="wow fadeInUp service-desc" data-wow-duration="1s"><i class="fas fa-car fa-2x service-icon"></i> Living Room</h3>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                            <h3 class="wow fadeInDown service-desc" data-wow-duration="1s" data-wow-delay="0.5s"><i class="fas fa-car fa-2x service-icon"></i> Living Room</h3>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                            <h3 class="wow fadeInUp service-desc" data-wow-duration="1s" data-wow-delay="1s"><i class="fas fa-car fa-2x service-icon"></i> Living Room</h3>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                            <h3 class="wow fadeInDown service-desc" data-wow-duration="1s" data-wow-delay="1.5s"><i class="fas fa-car fa-2x service-icon"></i> Living Room</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Services -->
+            
+            <!-- Start Gallery -->
+            <section>
+                <div class="gallery-div" id="d2">
+                    <div class="text-center gallery">
+                        <h2 class="wow slideInUp data-wow-duration="1s" data-wow-delay="0.2s"">Our Gallery</h2>
+                    </div>
+
+                    <div class="controls buttons text-center">
+                        <button type="button" class="control wow zoomInUp" id="button1" data-filter="all">All</button>
+                        <button type="button" class="control wow zoomInUp" data-wow-delay="0.2s" id="button2" data-filter=".fady1">Gp 1</button>
+                        <button type="button" class="control wow zoomInUp" data-wow-delay="0.4s" id="button3" data-filter=".fady2">Gp 2</button>
+                        <button type="button" class="control wow zoomInUp" data-wow-delay="0.6s" id="button4" data-filter=".fady3">Gp 3</button>
+                        <button type="button" class="control wow zoomInUp" data-wow-delay="0.8s" id="button5" data-filter=".fady4">Gp 4</button>
+                    </div>
+
+                    <div class="testtest">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-3 mix fady1 text-center">
+                                <img src="images/item-1.jpg" class="imgimg" />
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 mix fady3 text-center">
+                                <img src="images/item-2.jpg" class="imgimg"/>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 mix fady1 text-center">
+                                <img src="images/item-3.jpg" class="imgimg"/>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 mix fady4 text-center">
+                                <img src="images/item-4.jpg" class="imgimg"/>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 mix fady2 text-center">
+                                <img src="images/item-5.jpg" class="imgimg"/>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 mix fady3 text-center">
+                                <img src="images/item-6.jpg" class="imgimg"/>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 mix fady2 text-center">
+                                <img src="images/item-7.jpg" class="imgimg"/>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 mix fady4 text-center">
+                                <img src="images/item-8.jpg" class="imgimg"/>
+                            </div>
+                        </div><!--row-->
+                    </div><!--testtest-->
+                </div><!--gallery-div -->
+            </section>
+            <!-- End Gallery -->
+            
+            <!-- Start About Us -->
+            <section>
+                <div class="aboutus-div">
+                    <div class="text-center aboutus">
+                        <h2 class="wow slideInUp data-wow-duration="1s"">About Us</h2>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-heart fa-1x about-icon"></i>
+                        <p class="parpara1 wow bounceInRight">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's<br> standard dummy text ever since the 1500s, 
+                        is a long established fact that a reader.<br></p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-heart fa-1x about-icon"></i>
+                        <p class="parpara2 wow bounceInRight">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's<br> standard dummy text ever since the 1500s, 
+                        is a long established fact that a reader.<br></p>
+                    </div>
+                </div>
+            </section>
+            <!-- End About Us -->
+
+            <!-- Start Count -->
+            <section>
+                <div class="count-div1">
+                    <div class="count-div2">
+                        <div class="text-center fun">
+                            <h2 class="wow slideInUp data-wow-duration="1s"">Some Fun Facts</h2>
+                        </div>
+                        <div class="container">
+                            <div class="row text-center number-counters">
+                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                    <div class="counters-item">
+                                        <i class="fas fa-car fa-7x count-icon"></i>
+                                        <br><br>
+                                        <p class="more"></p>
+                                        <strong class="numberx" data-to="12">0</strong>
+                                        <br><br>
+                                        <p class="hours">Hours Of Work In Day</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                    <i class="fas fa-car fa-7x count-icon"></i>
+                                    <br><br>
+                                    <p class="morethan">More Than</p>
+                                    <strong class="numberx" data-to="500">0</strong>
+                                    <br><br>
+                                    <p class="hours">Satisfied Clients</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                    <i class="fas fa-car fa-7x count-icon"></i>
+                                    <br><br>
+                                    <p class="morethan">More Than</p>
+                                    <strong class="numberx" data-to="850">0</strong>
+                                    <br><br>
+                                    <p class="hours">Rooms Delivered</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                    <i class="fas fa-car fa-7x count-icon"></i>
+                                    <br><br>
+                                    <p class="more"></p>
+                                    <strong class="numberx" data-to="2015">0</strong>
+                                    <br><br>
+                                    <p class="hours">Since</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Count -->
+            
+            <!-- Start Contact Us -->
+            <section>
+                <div class="contact-div" id="d3">
+                    <div class="text-center contact">
+                        <h2 class="wow slideInUp data-wow-duration="1s"">Contact Us</h2>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-heart fa-1x about-icon"></i>
+                        <p class="parpara1 wow zoomInUp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's<br> standard dummy text ever since the 1500s, 
+                        is a long established fact that a reader.<br></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-offset-1 col-xs-6 col-sm-4 col-md-3">
+                            <h3 class="contact2 wow zoomInUp">Our Contact</h3>
+                            <br>
+                            <p class="parp1 wow zoomInUp">1 El Mahmoudy st, Cairo, Egypt</p>
+                            <p class="parp1 wow zoomInUp">fadysamirdev@outlook.com</p>
+                            <p class="parp1 wow zoomInUp">(02) 25192589</p>
+                            <p class="parp1 wow zoomInUp">(01) 000337906</p>
+                        </div>
+                        <div class="col-xs-offset-1 col-xs-5">
+                            <h3 class="contact2 wow fadeInUp">Say hello!</h3>
+                            <br>
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1" class="wow fadeInUp">Email address</label>
+                                    <input type="email" class="form-control wow fadeInUp" id="exampleInputEmail1" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1" class="wow fadeInUp">Password</label>
+                                    <input type="password" class="form-control wow fadeInUp" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-default wow fadeInUp" id="btn-submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Contact Us -->
+
+            <!-- Start Scroll Arrow -->
+            <section id="scroll">
+                <i class="fa fa-angle-up  fa-2x"></i>
+            </section>
+            <!-- End Scroll Arrow -->
+
+            <!-- Start Google map -->
+            <section>
+			    <div id="map_canvas" class="wow bounceInDown animated" data-wow-duration="500ms"></div>
+            </section>
+            <!-- End Google map -->
+        </main>
+        <footer>
+            <div class="footer-div">
+                <div class="row">
+                    <div class="col-xs-offset-1 col-xs-8 col-sm-3 col-md-2">
+                        <h3 class="geek wow fadeInUp">Geek Motors</h3>
+                        <p class="geek wow fadeInUp">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-8 col-sm-2 col-md-2">
+                        <h4 class="footer-items wow fadeInUp">Subscribe</h4>
+                        <br>
+                        <input type="text" name="Subscribe" id="subscribe" class="wow fadeInUp">
+                        <input type="submit" value="→" id="sub" class="wow fadeInUp">
+                        <p id="sub1" class="wow fadeInUp">Subscribe to receive all our new.</p>
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-8 col-sm-2 col-md-2">
+                        <h4 class="footer-items wow fadeInUp">Explore</h4>
+                        <br>
+                        <p class="ex1 wow fadeInUp">Inside Us</p>
+                        <p class="ex1 wow fadeInUp">Flickr</p>
+                        <p class="ex1 wow fadeInUp">Google</p>
+                        <p class="ex1 wow fadeInUp">Forum</p>
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-8 col-sm-2 col-md-2">
+                        <h4 class="footer-items">Support</h4>
+                        <br>
+                        <p class="ex1 wow fadeInUp">Contact Us</p>
+                        <p class="ex1 wow fadeInUp">Market Blog</p>
+                        <p class="ex1 wow fadeInUp">Help Center</p>
+                        <p class="ex1 wow fadeInUp">Pressroom</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <p class="copyright">Copyright © 2018 Motors. All rights reserved. Designed & developed by Fady Samir</p>
+                </div>
+            </div>
+        </footer>
+        <!--JQuery-->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!--Font Awesome-->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" 
+        integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" 
+        crossorigin="anonymous"></script>
+
+        <!--Bootstrap/3.3.7 JS-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+        <!-- Wow Plugin -->
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+
+        <!-- CountUp -->
+        <script src="js/jquery-countTo.js"></script>
+        <script src="http://www.sedia-furniture.com/js/jquery-countTo.js"></script>
+        <script src="js/jquery.appear.js"></script>
+
+        <!-- Mixitup -->
+        <script src="js/mixitup.js"></script>
+        <script>
+            var containerEl = document.querySelector('.testtest');
+            var mixer = mixitup(containerEl);
+        </script>
+
+        <!-- Google Map -->
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+        <!--JS My Own File-->
+        <script src="js/script.js"></script>
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvVN89Qs0nwbKOJowQK2geTDDdFaY-xnM&callback=init_map"
+        type="text/javascript"></script>
+
+	    <script type="text/javascript">
+        function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(29.97474570000000000000,31.28007140000000000000),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(29.97474570000000000000,31.28007140000000000000)});google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+    </body>
+</html>
