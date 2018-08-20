@@ -25,19 +25,24 @@ $(document).ready(function(){
 		$("#loading-back").fadeOut(3000);
         $("#loading-back").remove;
      });
+     $("#nav-color-font1").click(function() {
+        $('html, body').animate({
+            scrollTop: $("html").offset().top
+        }, 1000);
+    });
      $("#nav-color-font2").click(function() {
         $('html, body').animate({
-            scrollTop: $("#d1").offset().top
+            scrollTop: $("#servicesView").offset().top
         }, 1000);
     });
     $("#nav-color-font3").click(function() {
         $('html, body').animate({
-            scrollTop: $("#d2").offset().top
+            scrollTop: $("#galleryView").offset().top
         }, 1000);
     });
-    $("#nav-color-font5").click(function() {
+    $("#nav-color-font4").click(function() {
         $('html, body').animate({
-            scrollTop: $("#d3").offset().top
+            scrollTop: $("#contactUs").offset().top
         }, 1000);
     });
 	"use strict";

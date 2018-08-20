@@ -26,6 +26,11 @@
     }
 }
 
+/*HTML*/
+html{
+    overflow-x: hidden;
+}
+
 /*body*/
 body{ 
     margin: 0%;
@@ -41,7 +46,7 @@ body{
 
 /*Nav Bar*/
 .navbar-default{
-    background-color: rgba(63, 119, 138, 0.3);
+    background-color: rgba(63, 119, 138, 0.1);
 }
 .navbar-fixed-top{
     width:100%;
@@ -55,6 +60,9 @@ body{
 }
 #nav-color-font1{
     color: white;
+}
+#nav-color-font1:hover{
+    background-color: #2aafe4;
 }
 #nav-color-font2{
     color: white;
@@ -85,6 +93,11 @@ body{
 }
 .navbar-default .navbar-toggle .icon-bar{
     background-color: white;
+}
+@media (max-width: 767px){
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+        color: white;
+    }
 }
 
 /*Slider*/
